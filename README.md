@@ -5,6 +5,7 @@ A desktop application for managing products in a PostgreSQL database, featuring:
 - **JSON import/export** (Ctrl+I/Ctrl+E hotkeys)
 - **Swing GUI** with responsive design
 - PostgreSQL connectivity
+- Link to presentation: https://www.canva.com/design/DAGksAIwUes/_q_xLRAkDHGS9wWSLwN7Zg/view?utm_content=DAGksAIwUes&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf9d33c1c13
 
 ---
 
