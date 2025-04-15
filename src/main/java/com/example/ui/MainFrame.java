@@ -1,13 +1,18 @@
 package com.example.ui;
 
+import com.example.JsonExporter;
 import com.example.dao.ProductDaoImpl;
 import com.example.model.Product;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.sql.Connection;
+
+import com.example.ImportJson;
 
 public class MainFrame extends JFrame {
     private ProductDaoImpl productDao;
@@ -21,6 +26,43 @@ public class MainFrame extends JFrame {
         setTitle("Product Manager");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBackground(Color.WHITE);
+
+        // Горячая клавиша Ctrl + E
+        KeyStroke keyStroke = KeyStroke.getKeyStroke(KeyEvent.VK_E, 
+            System.getProperty("os.name").toLowerCase().contains("mac") ? KeyEvent.META_DOWN_MASK : KeyEvent.CTRL_DOWN_MASK);
+
+        KeyStroke keyStroke2 = KeyStroke.getKeyStroke(KeyEvent.VK_I, 
+            System.getProperty("os.name").toLowerCase().contains("mac") ? KeyEvent.META_DOWN_MASK : KeyEvent.CTRL_DOWN_MASK);
+
+
+        // Получаем input и action map для root панели
+        JRootPane rootPane = this.getRootPane();
+        InputMap inputMap = rootPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
+        ActionMap actionMap = rootPane.getActionMap();
+
+        // Привязываем клавишу к действию "export"
+        inputMap.put(keyStroke, "export");
+        actionMap.put("export", new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println(">>> Ctrl+E");
+                // Здесь вызываем твой метод
+                JsonExporter.exportData();
+            }
+        });
+
+        inputMap.put(keyStroke2, "import");
+        actionMap.put("import", new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println(">>> Ctrl+I");
+                // Здесь вызываем твой метод
+                ImportJson.importData(MainFrame.this);
+                refreshBottomPanel();
+            }
+        });
+
+        
 
         System.out.println("MainFrame конструктор: Начало инициализации");
         if (conn == null) {
