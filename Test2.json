@@ -1,0 +1,53 @@
+[
+    {
+      "quantity": "10",
+      "price": "799",
+      "name": "Samsung Galaxy S23"
+    },
+    {
+      "quantity": "15",
+      "price": "899",
+      "name": "Samsung Galaxy S23 Ultra"
+    },
+    {
+      "quantity": "20",
+      "price": "999",
+      "name": "Samsung Galaxy Z Flip 5"
+    },
+    {
+      "quantity": "5",
+      "price": "749",
+      "name": "Samsung Galaxy A54"
+    },
+    {
+      "quantity": "8",
+      "price": "1099",
+      "name": "Samsung Galaxy Z Fold 5"
+    },
+    {
+      "quantity": "12",
+      "price": "649",
+      "name": "Samsung Galaxy A34"
+    },
+    {
+      "quantity": "25",
+      "price": "799",
+      "name": "Samsung Galaxy S22"
+    },
+    {
+      "quantity": "30",
+      "price": "1199",
+      "name": "Samsung Galaxy S22 Ultra"
+    },
+    {
+      "quantity": "18",
+      "price": "699",
+      "name": "Samsung Galaxy A14"
+    },
+    {
+      "quantity": "22",
+      "price": "899",
+      "name": "Samsung Galaxy M54"
+    }
+  ]
+  

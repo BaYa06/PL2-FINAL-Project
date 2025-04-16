@@ -1,0 +1,53 @@
+[
+    {
+      "quantity": "5",
+      "price": "25000",
+      "name": "Toyota Camry"
+    },
+    {
+      "quantity": "3",
+      "price": "35000",
+      "name": "Honda Accord"
+    },
+    {
+      "quantity": "7",
+      "price": "45000",
+      "name": "Ford Mustang"
+    },
+    {
+      "quantity": "10",
+      "price": "20000",
+      "name": "Chevrolet Malibu"
+    },
+    {
+      "quantity": "4",
+      "price": "60000",
+      "name": "BMW 5 Series"
+    },
+    {
+      "quantity": "6",
+      "price": "55000",
+      "name": "Audi A6"
+    },
+    {
+      "quantity": "8",
+      "price": "40000",
+      "name": "Mercedes-Benz E-Class"
+    },
+    {
+      "quantity": "12",
+      "price": "30000",
+      "name": "Nissan Altima"
+    },
+    {
+      "quantity": "9",
+      "price": "22000",
+      "name": "Kia Optima"
+    },
+    {
+      "quantity": "5",
+      "price": "25000",
+      "name": "Hyundai Sonata"
+    }
+  ]
+  

@@ -1,11 +1,138 @@
 # Product Manager (Java Swing + PostgreSQL)
 
-A desktop application for managing products in a PostgreSQL database, featuring:
-- **CRUD operations** (Create, Read, Update, Delete)
+## Descripton
+This project is a simple desktop application that allows users to add, update, delete, and manage product data stored in a PostgreSQL database. It also supports exporting product data to JSON and importing it back when needed.
+
+## Made by: KHOLIKOV BAIIRBEK COMCEH24 
+
+## Main Features
+
+- ✅ Add new products to the database  
+- 📝 Edit existing product information  
+- ❌ Delete products from the database  
+- 📤 Export product data to a JSON file  
+- 📥 Import product data from a JSON file  
+- 📂 Choose save location using file chooser  
+- ⌨️ Use keyboard shortcuts for quick actions  
+- 🖥️ Simple and clean graphical interface (GUI)
 - **JSON import/export** (Ctrl+I/Ctrl+E hotkeys)
 - **Swing GUI** with responsive design
 - PostgreSQL connectivity
 - Link to presentation: https://www.canva.com/design/DAGksAIwUes/_q_xLRAkDHGS9wWSLwN7Zg/view?utm_content=DAGksAIwUes&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf9d33c1c13
+
+---
+
+## Objectives:
+- Build a GUI-based application using Java Swing.
+- Implement CRUD operations (Create, Read, Update, Delete) on a product list.
+- Connect the application to a PostgreSQL database.
+- Allow users to export and import product data in JSON format.
+- Use file chooser dialogs to save and load files.
+- Provide keyboard shortcuts for quicker operations.
+- Maintain clean, readable, and modular code.
+- Ensure proper input validation and error handling.
+- Deliver working software with supporting documentation.
+- Demonstrate Java skills in file handling, database integration, and GUI design.
+
+---
+
+## Project Requirement List:
+1. GUI using Java Swing.
+2. PostgreSQL database connection.
+3. Add new product entries.
+4. Edit product details.
+5. Delete products.
+6. Export product data to JSON.
+7. Import product data from JSON.
+8. File chooser for export/import location.
+9. Keyboard shortcuts (Ctrl+E for export, Ctrl+I for import).
+10. Display success/error messages using dialog boxes.
+
+---
+
+## Documentation:
+
+### Algorithms & Functions:
+- JDBC is used to perform SQL queries and updates.
+- JSON export/import is handled using the Jackson ObjectMapper library.
+- `ResultSetMetaData` is used to dynamically read column data.
+- Action listeners and key bindings are used for GUI interaction.
+
+### Data Structures:
+- Product data is stored in `List<Map<String, Object>>` for JSON export/import.
+- HashMap used for each product's data.
+
+### Modules:
+- `JsonExporter.java`: Handles export to JSON.
+- `ImportJson.java`: Handles import from JSON.
+- `MainFrame.java`: GUI and event bindings.
+
+### Challenges Faced:
+- Setting up PostgreSQL connection properly.
+- Ensuring JSON file format compatibility.
+- Handling file selection and validation.
+- Cross-platform keyboard shortcuts.
+
+---
+
+## Test Cases and Outputs:
+
+### Test Case 1:
+**Action:** Add product: Name = "Laptop", Price = 1000.0
+**Expected Result:** Product appears in the database and UI list.
+
+### Test Case 2:
+**Action:** Export products
+**Expected Result:** JSON file is saved with all current products.
+
+### Test Case 3:
+**Action:** Import products from JSON
+**Expected Result:** Data is added into the database, avoiding duplicates or ID conflicts.
+
+### Test Case 4:
+**Action:** Press Ctrl+E
+**Expected Result:** Export window opens.
+
+### Test Case 5:
+**Action:** Press Ctrl+I
+**Expected Result:** Import window opens.
+
+(Screenshots should be included manually in the final report file.)
+
+---
+
+## Code:
+- Code is organized in separate files by functionality.
+- JDBC used for DB actions.
+- Jackson used for JSON parsing.
+- GUI uses Swing with `JFrame`, `JButton`, and `JTable`.
+
+(No excessive comments were added as per the instruction.)
+
+---
+
+## Files:
+- `export.json` and `import.json`: for storing product data.
+- `.java` source files: project source code.
+- `.md` files: documentation.
+
+---
+
+> Ensure all screenshots and output files are submitted along with this documentation and source code for full evaluation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 

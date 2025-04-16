@@ -49,7 +49,7 @@ public class JsonExporter {
                 ObjectMapper mapper = new ObjectMapper();
                 mapper.writerWithDefaultPrettyPrinter().writeValue(fileToSave, rows);
 
-                JOptionPane.showMessageDialog(null, "Файл успешно сохранен в " + fileToSave.getAbsolutePath(), "Успех", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "File succesfully saved to " + fileToSave.getAbsolutePath(), "Успех", JOptionPane.INFORMATION_MESSAGE);
                 System.out.println("JSON с данными (без id) был успешно создан!");
 
             } catch (SQLException | IOException e) {

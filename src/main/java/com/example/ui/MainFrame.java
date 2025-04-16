@@ -11,6 +11,7 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.sql.Connection;
+import java.util.List;
 
 import com.example.ImportJson;
 
@@ -116,6 +117,7 @@ public class MainFrame extends JFrame {
         JButton updateBut = createStyledButton("Update", buttonSize, new Color(251, 175, 22));
         JButton deleteBut = createStyledButton("Delete", buttonSize, new Color(251, 175, 22));
         JButton clsBut = createStyledButton("Clear", buttonSize, new Color(251, 159, 22));
+        JButton countBut = createStyledButton("Count", buttonSize, new Color(251, 175, 22));
 
         addBut.addActionListener(e -> {
             System.out.println("Нажата кнопка Add");
@@ -150,6 +152,21 @@ public class MainFrame extends JFrame {
                 JOptionPane.showMessageDialog(this, "Price and Quantity should be INTEGER", "Error", JOptionPane.WARNING_MESSAGE);
             }
         });
+
+        countBut.addActionListener(e -> {
+
+            List<Product> products = productDao.getAllProducts();
+            /* 
+                int count = 0;
+                for (int i = 0; i < products.size(); i++) {
+                    count += products.get(i).getQuantity();
+                }
+            */
+            long count = products.stream().mapToInt(p -> p.getQuantity()).sum();
+
+            JOptionPane.showMessageDialog(this, "Total quantity: " + count, "Info", JOptionPane.INFORMATION_MESSAGE);
+        });
+
 
         updateBut.addActionListener(e -> {
             if (productDao == null) {
@@ -230,6 +247,8 @@ public class MainFrame extends JFrame {
         buttonsPanel.add(deleteBut);
         buttonsPanel.add(Box.createVerticalStrut(11));
         buttonsPanel.add(clsBut);
+        buttonsPanel.add(Box.createVerticalStrut(11));
+        buttonsPanel.add(countBut);
         buttonsPanel.add(Box.createVerticalStrut(5));
         buttonsPanel.add(Box.createVerticalGlue());
 

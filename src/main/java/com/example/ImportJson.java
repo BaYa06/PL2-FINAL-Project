@@ -56,7 +56,7 @@ public class ImportJson {
                     }
 
                     stmt.executeBatch();
-                    JOptionPane.showMessageDialog(parentFrame, "Данные успешно импортированы!", "Успех", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(parentFrame, "Data was succesfully imported!", "Успех", JOptionPane.INFORMATION_MESSAGE);
                 }
 
             } catch (Exception e) {
