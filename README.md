@@ -119,20 +119,12 @@ This project is a simple desktop application that allows users to add, update, d
 ---
 
 > Ensure all screenshots and output files are submitted along with this documentation and source code for full evaluation.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Screenshot](https://github.com/BaYa06/PL2-FINAL-Project/blob/main/src/main/resources/Снимок%20экрана%202025-04-16%20в%2015.43.51.png)
+![Screenshot](https://github.com/BaYa06/PL2-FINAL-Project/blob/main/src/main/resources/Снимок%20экрана%202025-04-16%20в%2015.44.46.png)
+![Screenshot](https://github.com/BaYa06/PL2-FINAL-Project/blob/main/src/main/resources/Снимок%20экрана%202025-04-16%20в%2015.45.10.png)
+![Screenshot](https://github.com/BaYa06/PL2-FINAL-Project/blob/main/src/main/resources/Снимок%20экрана%202025-04-16%20в%2015.45.25.png)
+![Screenshot](https://github.com/BaYa06/PL2-FINAL-Project/blob/main/src/main/resources/Снимок%20экрана%202025-04-16%20в%2015.45.41.png)
+![Screenshot](https://github.com/BaYa06/PL2-FINAL-Project/blob/main/src/main/resources/Снимок%20экрана%202025-04-16%20в%2015.53.42.png)
 
 ---
 
